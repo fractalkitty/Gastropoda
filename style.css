@@ -413,6 +413,16 @@ div.slug {
     margin: auto;
 }
 
+div.slug-2 {
+    font-size: 200px;
+    text-align: center;
+    padding: 5px;
+    line-height: 1em;
+    font-weight: normal;
+    color: #645d00;
+    margin: auto;
+}
+
 .slug-body {
     margin: 0;
     padding: 0;
@@ -465,6 +475,7 @@ h2 {
 
 .about-ul {
     width: 80%;
+    margin: auto;
 }
 
 .about-ul li {
@@ -473,4 +484,5 @@ h2 {
     padding: 5px;
     font-size: 1.5em;
     list-style: none;
+    margin: auto;
 }

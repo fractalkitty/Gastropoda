@@ -128,11 +128,3 @@ a {
 a:hover {
   background-color: #fcf883;
 }
-
-textarea {
-  width: 90%;
-  background-color: white;
-  color: black;
-  font-family: "slugglyregular", sans-serif;
-
-}
