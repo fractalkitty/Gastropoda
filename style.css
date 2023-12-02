@@ -9,6 +9,7 @@ body {
     color: #000;
     background-color: lightyellow;
     margin-top: 2vh;
+
 }
 
 @font-face {
@@ -96,7 +97,7 @@ header img {
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(5, 145, 70);
 }
 
 .intro {
@@ -179,17 +180,32 @@ a {
 
 }
 
+.projects h4 {
+    font-size: 1.6em;
+}
+
+.projects p {
+    font-size: 1.2em;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
 .projects {
     width: 90%;
     justify-content: center;
     text-align: center;
+    background-color: rgb(247, 247, 219);
+    border-radius: 5%;
 }
 
 .projects img {
     width: 90%;
+    max-width: 400px;
     border-radius: 5% / 10%;
     margin: 2px;
     padding: 1vw;
+    background-color: rgb(162, 162, 121);
 }
 
 .projects .project {
@@ -197,12 +213,6 @@ a {
     margin: 1vw;
 }
 
-.projects p {
-    width: 90%;
-    margin: 0;
-    padding: 0;
-    color: rgb(24, 27, 47);
-}
 
 footer {
     display: flex;
@@ -325,10 +335,34 @@ footer nav {
 
 }
 
+@media (min-width: 768px) {
+    .projects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin-left: 2vw;
+    }
+
+    .projects .project {
+        width: calc(50% - 2vw);
+        /* 2 columns */
+        margin: 1vw;
+    }
+}
+
+
+
 @media (min-width: 1024px) {
 
 
     #sluggly {
+        margin-top: 80px;
+    }
+
+    #portfolio {
         margin-top: 80px;
     }
 
@@ -467,6 +501,9 @@ div.slug-2 {
 .log-image {
     width: 30%;
     height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
 }
 
 h2 {
@@ -474,8 +511,13 @@ h2 {
 }
 
 .about-ul {
-    width: 80%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
     margin: auto;
+
 }
 
 .about-ul li {
@@ -484,5 +526,69 @@ h2 {
     padding: 5px;
     font-size: 1.5em;
     list-style: none;
+    margin: 10px auto;
+
+}
+
+#portfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-color: ivory;
+    color: rgb(24, 27, 47);
+
+}
+
+
+
+#portfolio h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+}
+
+.projects {
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+#container-paint {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    height: auto;
     margin: auto;
+    background-color: ivory;
+    color: rgb(24, 27, 47);
+    font-size: 1.3em;
+}
+
+.about-header {
+    text-align: center;
+    border-radius: 20%;
+    border-bottom: #849e70 solid 4px;
+    border-top: #849e70 solid 1px;
+}
+
+.cc {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: ivory;
+    padding: 2px 0px;
 }
