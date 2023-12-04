@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastropoda</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+    <div class="head-container">
+        <h1 class="title">Gastropoda</h1>
+        <nav>
+
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../sluggly_page/sluggly.html">Sluggly</a></li>
+                <li><a href="../about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <form id="characterSheet">
+        <h1>RPGastropoda Character</h1>
+        <fieldset>
+            <legend>Character Definition</legend>
+            <div class="row-container">
+                <label for="characterName">Name:</label>
+                <input type="text" id="characterName" name="characterName">
+            </div>
+
+            <div class="row-container">
+                <label for="species">Species:</label>
+                <select id="species" name="species">
+                    <option value="" disabled selected>Select Species</option>
+                    <optgroup label="opisthobranchs">
+                        <option value="bubble-shell">bubble shell</option>
+                        <option value="nudibranch">nudibranch</option>
+                        <option value="pteropod">pteropod</option>
+                        <option value="sea hares">sea hares</option>
+                        <option value="sea-slug">sea slug</option>
+                    </optgroup>
+                    <optgroup label="prosobranchs">
+                        <option value="abolone">abolone</option>
+                        <option value="whelk">whelk</option>
+                        <option value="periwinkle">periwinkle</option>
+                        <option value="conch">conch</option>
+                        <option value="cone">cone-shell</option>
+                        <option value="cowrie">cowrie</option>
+                        <option value="limpet">limpet</option>
+                        <option value="freshwater-snail">freshwater snail</option>
+                        <option value="land-snail">land snail</option>
+                        <option value="ear-shells">ear shell</option>
+                        <option value="murex">murex</option>
+                        <option value="mitre">mitre shell</option>
+                        <option value="olive">olive shell</option>
+                        <option value="slipper">slipper shell</option>
+                        <option value="turban">turban shell</option>
+                        <option value="turret">turritellid</option>
+                        <option value="worm">worm-shell</option>
+                        <option value="volute">volute</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="row-container">
+
+
+                <label for="archetype">Archetype:</label>
+                <select id="archetype" name="archetype">
+                    <option value="" disabled selected>Select Type</option>
+                    <option value="trail-forger">trail forger</option>
+                    <option value="nightly-knight">nightly knight</option>
+                    <option value="mucus-mage">mucus mage</option>
+                    <option value="slug-scout">slug scout</option>
+                    <option value="understory-hermit">understory hermit</option>
+                    <option value="herbalist">herbalist</option>
+                    <option value="slithery-sneak">slithery sneak</option>
+                    <option value="invocator">tentacle invocator</option>
+                    <option value="meditator">meditator</option>
+                    <option value="morpher">morpher</option>
+                    <option value="slime-crafter">slime crafter</option>
+                </select>
+
+            </div>
+            <div class="row-container">
+
+                <label for="philosophy">Philosophy:</label>
+                <select id="philosophy" name="philosophy">
+                    <option value="" disabled selected>Select Type</option>
+                    <option value="exsit">slimexistentialism</option>
+                    <option value="stoic">mucustoicism</option>
+                    <option value="minimalism">minimalslimism</option>
+                    <option value="nihlism">nihilislimism</option>
+                    <option value="enviro">naturalism</option>
+                    <option value="adventrue">tentacle-adventurism</option>
+                    <option value="trans">transgastropodism</option>
+                    <option value="mysticism">mucusal mysticism</option>
+                    <option value="nomadic">nomadic mucostocism</option>
+                    <option value="cycle">cylcicalslimism</option>
+                    <option value="pragmatism"> pragmamucusisism</option>
+                    <option value="anarchism">anarchism</option>
+                    <option value="absurd">absurdislimism</option>
+                    <option value="hedonism">pleasuremucusism</option>
+                </select>
+
+            </div>
+            <div class="row-container">
+                <label for="age">Age/maturity:</label>
+                <input type="text" id="age" name="age">
+            </div>
+
+            <div class="row-container">
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description">
+            </div>
+            <div class="row-container">
+                <label for="habitat">Habitat:</label>
+                <input type="text" id="habitat" name="habitat">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Attributes</legend>
+            <h3 class="dice">Roll a d12 with Fibonacci numbers</h3>
+            <div class="row-container">
+                <label for="strength">Mucus Strength:</label>
+                <select id="strength" name="strength">
+                    <option value="" disabled selected>Enter Roll</option>
+                    <option value="r1">1</option>
+                    <option value="r2">1</option>
+                    <option value="r3">2</option>
+                    <option value="r4">3</option>
+                    <option value="r5">5</option>
+                    <option value="r6">8</option>
+                    <option value="r7">13</option>
+                    <option value="r8">21</option>
+                    <option value="r9">34</option>
+                    <option value="r10">55</option>
+                    <option value="r11">89</option>
+                    <option value="r12">144</option>
+                </select>
+            </div>
+            <div class="row-container">
+                <label for="slime-production">Slime Production:</label>
+                <select id="slime-production" name="slime-production">
+                    <option value="" disabled selected>Enter Roll</option>
+                    <option value="r1">1</option>
+                    <option value="r2">1</option>
+                    <option value="r3">2</option>
+                    <option value="r4">3</option>
+                    <option value="r5">5</option>
+                    <option value="r6">8</option>
+                    <option value="r7">13</option>
+                    <option value="r8">21</option>
+                    <option value="r9">34</option>
+                    <option value="r10">55</option>
+                    <option value="r11">89</option>
+                    <option value="r12">144</option>
+                </select>
+            </div>
+            <div class="row-container">
+                <label for="tentacle-sensitivity">Tentacle Sensitivity:</label>
+                <select id="tentacle-sensitivity" name="tentacle-sensitivity">
+                    <option value="" disabled selected>Enter Roll</option>
+                    <option value="r1">1</option>
+                    <option value="r2">1</option>
+                    <option value="r3">2</option>
+                    <option value="r4">3</option>
+                    <option value="r5">5</option>
+                    <option value="r6">8</option>
+                    <option value="r7">13</option>
+                    <option value="r8">21</option>
+                    <option value="r9">34</option>
+                    <option value="r10">55</option>
+                    <option value="r11">89</option>
+                    <option value="r12">144</option>
+                </select>
+            </div>
+            <div class="row-container">
+                <label for="poison-immunity">Poison Immunity</label>
+                <select id="poison-immunity" name="poison-immunity">
+                    <option value="" disabled selected>Enter Roll</option>
+                    <option value="r1">1</option>
+                    <option value="r2">1</option>
+                    <option value="r3">2</option>
+                    <option value="r4">3</option>
+                    <option value="r5">5</option>
+                    <option value="r6">8</option>
+                    <option value="r7">13</option>
+                    <option value="r8">21</option>
+                    <option value="r9">34</option>
+                    <option value="r10">55</option>
+                    <option value="r11">89</option>
+                    <option value="r12">144</option>
+                </select>
+            </div>
+            <div class="row-container">
+                <label for="perception">Slowness Perception:</label>
+                <select id="perception" name="perception">
+                    <option value="" disabled selected>Enter Roll</option>
+                    <option value="r1">1</option>
+                    <option value="r2">1</option>
+                    <option value="r3">2</option>
+                    <option value="r4">3</option>
+                    <option value="r5">5</option>
+                    <option value="r6">8</option>
+                    <option value="r7">13</option>
+                    <option value="r8">21</option>
+                    <option value="r9">34</option>
+                    <option value="r10">55</option>
+                    <option value="r11">89</option>
+                    <option value="r12">144</option>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <!-- Abilities/Skills -->
+        <fieldset>
+            <legend>Abilities/Skills</legend>
+            <div class="row-container">
+                <label for="slimeCrafting">Slime Crafting:</label>
+                <input type="checkbox" id="slimeCrafting" name="slimeCrafting">
+            </div>
+            <div class="row-container">
+                <label for="tentacleMagic">Tentacle Magic:</label>
+                <input type="checkbox" id="tentacleMagic" name="tentacleMagic">
+            </div>
+            <div class="row-container">
+                <label for="tentacleCombat">Mucusal Combat:</label>
+                <input type="checkbox" id="tentacleCombat" name="tentacleCombat">
+            </div>
+            <div class="row-container">
+                <label for="tentacleSneak">Eyestalk Sneak:</label>
+                <input type="checkbox" id="tentacleSneak" name="tentacleSneak">
+            </div>
+            <div class="row-container">
+                <label for="meditation"> Meditation:</label>
+                <input type="checkbox" id="meditation" name="meditation">
+            </div>
+            <div class="row-container">
+                <label for="persuation">Slime Persuation:</label>
+                <input type="checkbox" id="persuation" name="persuation">
+            </div>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Inventory</legend>
+
+            <label for="weapons">Weapons:</label>
+            <textarea id="weapons" name="weapons"></textarea><br>
+            <label for="armor">Armor:</label>
+            <textarea id="armor" name="armor"></textarea><br>
+            <label for="other">Other:</label>
+            <textarea id="other" name="other"></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Allies/Companions</legend>
+            <label for="companionCreature">Companion Creature:</label>
+            <input type="text" id="companionCreature" name="companionCreature"><br>
+
+        </fieldset>
+
+        <!-- Backstory -->
+        <fieldset>
+            <legend>Backstory</legend>
+            <label for="originStory">Origin Story:</label>
+            <textarea id="originStory" name="originStory"></textarea><br>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <button type="submit">Download CSV</button>
+    </form>
+    <p class="cc">This work is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1"
+            target="_blank" rel="license noopener noreferrer">CC BY-SA 4.0<img
+                style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="cc image"><img
+                style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="by image"><img
+                style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="sa image"></a></p>
+    <br>
+    <script>
+        document.getElementById('characterSheet').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent actual form submission
+
+            let data = '';
+            const formElements = this.elements;
+
+            for (let i = 0; i < formElements.length; i++) {
+                let element = formElements[i];
+                let value = '';
+
+                if (element.type === 'select-one') {
+
+                    value = element.options[element.selectedIndex].text;
+                } else if (element.type === 'checkbox') {
+
+                    value = element.checked ? 'Yes' : 'No';
+                } else if (element.name && element.type !== 'submit') {
+
+                    value = element.value;
+                }
+
+                if (element.name && element.type !== 'submit') {
+                    data += `"${element.name}","${value}"\n`;
+                }
+            }
+
+            // Create a Blob from the data
+            let csvBlob = new Blob([data], { type: 'text/csv' });
+
+            // Create a link and trigger download
+            let downloadLink = document.createElement('a');
+            downloadLink.href = window.URL.createObjectURL(csvBlob);
+            downloadLink.download = 'characterSheet.csv';
+
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+        });
+    </script>
+</body>
+
+</html>
