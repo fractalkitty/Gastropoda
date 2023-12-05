@@ -10,6 +10,8 @@ body {
     background-color: lightyellow;
     margin-top: 2vh;
     margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: normal;
 }
 
 @font-face {
@@ -187,7 +189,8 @@ a {
 }
 
 .project h4 {
-    font-size: 1.6em;
+    font-size: 1.8em;
+    font-weight: normal;
 }
 
 .project p {
