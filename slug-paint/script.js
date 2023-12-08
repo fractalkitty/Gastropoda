@@ -8,8 +8,7 @@ let cnv;
 let t = 0;
 function setup() {
   w = min(windowWidth * 0.9, 400);
-  cnv = createCanvas(w, w);
-  cnv.parent('container-paint');
+  createCanvas(w, w);
   background(224, 202, 141);
   paper();
   slug();

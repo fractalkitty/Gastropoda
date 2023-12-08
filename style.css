@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+
 }
 
 body {
@@ -210,11 +211,12 @@ a {
 }
 
 .project img {
-    width: 50%;
+    width: 90%;
     max-width: 250px;
     border-radius: 5% / 10%;
     margin: 2px;
     padding: 1vw;
+    margin: auto;
 
 }
 
@@ -702,3 +704,20 @@ button:hover {
         margin: 1vw;
     }
 }
+
+#sketch {
+    margin: 0;
+    display: flex;
+
+    /* This centers our sketch horizontally. */
+    justify-content: center;
+
+    /* This centers our sketch vertically. */
+    align-items: center;
+
+    /* order: 0; */
+}
+
+/* .cc {
+    /* order: 1000; */
+/* } */
