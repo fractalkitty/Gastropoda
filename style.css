@@ -388,12 +388,15 @@ div.slug-2 {
 }
 
 .log-image {
-    width: 30%;
+    width: 90%;
     height: auto;
     margin: auto;
     display: flex;
     flex-direction: row;
+    transition: 0.4ms;
 }
+
+
 
 h2 {
     margin: 2vw
