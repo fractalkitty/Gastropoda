@@ -7,8 +7,8 @@ body {
     margin: 0;
     font-family: 'slugglyregular', sans-serif;
     line-height: 1.5;
-    color: #000;
-    background-color: lightyellow;
+    color: lightyellow;
+    background-color: #011536;
     margin-top: 2vh;
     margin-bottom: 20px;
     font-size: 18px;
@@ -27,7 +27,7 @@ body {
     text-align: center;
     font-weight: normal;
     margin-bottom: 20px;
-    color: black;
+    color: ivory;
     font-size: 3.5em;
     line-height: 1em;
     padding: 5px;
@@ -49,14 +49,19 @@ nav h1 {
 }
 
 .head-container {
-    background-color: rgb(231, 231, 186);
+    background-color: #011e4f;
     padding-bottom: 20px;
+    color: ivory;
 }
 
 .project {
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 500px;
     justify-content: center;
     text-align: center;
+    margin: auto;
 }
 
 nav ul {
@@ -76,7 +81,7 @@ nav li {
     max-width: 150px;
     margin: 2px;
     margin-top: 8px;
-    background-color: rgb(255, 255, 222);
+    background-color: #13294e;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     flex: 1;
     padding: 10px;
@@ -93,6 +98,7 @@ header {
     padding: 0;
     width: 100%;
     height: auto;
+    color: white;
 }
 
 header img {
@@ -105,8 +111,8 @@ header img {
 }
 
 a {
-    text-decoration: none;
-    color: rgb(5, 145, 70);
+    text-decoration: underline;
+    color: rgb(183, 230, 246);
 }
 
 .intro {
@@ -125,7 +131,8 @@ a {
     padding: 0;
     width: 100%;
     height: auto;
-    background-color: ivory;
+    background-color: #1a345e;
+
     color: rgb(24, 27, 47);
 
 }
@@ -148,7 +155,7 @@ a {
     padding: 0;
     width: 100%;
     height: auto;
-    background-color: rgb(204, 218, 227);
+    background-color: #1a345e;
     color: rgb(24, 27, 47);
 
 }
@@ -183,7 +190,7 @@ a {
     margin-right: 10px;
     margin-left: 10px;
     list-style-type: none;
-    background-color: rgb(235, 247, 255);
+    background-color: #1a345e;
     border-radius: 25% / 10%;
     font-family: 'Nunito Sans', sans-serif;
 
@@ -205,7 +212,8 @@ a {
     width: 90%;
     justify-content: center;
     text-align: center;
-    background-color: ivory;
+    background-color: #1a345e;
+    color: ivory;
     border-radius: 5%;
     margin-bottom: 5px;
 }
@@ -218,6 +226,12 @@ a {
     padding: 1vw;
     margin: auto;
 
+    transition: transform 0.3s ease-in-out;
+}
+
+.project img:hover {
+    transform: rotate(2deg);
+}
 }
 
 .project {
@@ -237,12 +251,12 @@ footer {
 
 footer a {
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration: underline;
 
 }
 
 a:hover {
-    color: rgb(109, 124, 41);
+    color: turquoise;
     font-style: oblique;
 }
 
@@ -272,9 +286,9 @@ footer nav {
 #header {
     padding: 20px;
     font-size: 50px;
-    background-color: #fffbbd;
+    background-color: #1a345e;
     border-bottom: solid black 2px;
-    color: #435039;
+    color: ivory;
 }
 
 
@@ -294,7 +308,7 @@ div.huge {
     margin-bottom: 50px;
     margin-top: 10px;
     width: 80%;
-    background: #faf4b9;
+    background: #1a345e;
     border-radius: 10%/50%;
     text-align: center;
 }
@@ -306,7 +320,7 @@ div.huge {
     margin: auto;
     width: 80%;
     margin-bottom: 50px;
-    background: #fffbbd;
+    background: #1a345e;
     border-radius: 10%;
     text-align: center;
 }
@@ -317,7 +331,7 @@ div.huge {
     margin: auto;
     margin-bottom: 50px;
     width: 90%;
-    background: #fffbbd;
+    background: #1a345e;
     border-radius: 20%/5%;
     text-align: center;
     letter-spacing: 0.5em;
@@ -342,7 +356,7 @@ div.slug-2 {
     padding: 5px;
     line-height: 1em;
     font-weight: normal;
-    color: #645d00;
+    color: #27436f;
     margin: auto;
 }
 
@@ -350,7 +364,7 @@ div.slug-2 {
     margin: 0;
     padding: 0;
     font-size: 100%;
-    background: #283022;
+    background: #0e1d36;
     width: 100%;
     box-sizing: border-box;
     text-align: center;
@@ -365,7 +379,7 @@ div.slug-2 {
     padding: 10px 10px;
     margin-top: 20px;
     font-size: 40px;
-    color: #283022;
+    color: #202d43;
     text-decoration: none;
     background-color: ivory;
     border-radius: 5px;
@@ -379,16 +393,18 @@ div.slug-2 {
 }
 
 .about-a {
-    color: rgb(55, 126, 0);
+    color: rgb(194, 217, 250);
+    text-decoration: underline;
     transition: background-color 0.3s ease;
 }
 
 .about-a:hover {
-    color: rgb(4, 139, 78);
+    color: turquoise;
 }
 
 .log-image {
     width: 90%;
+    max-width: 500px;
     height: auto;
     margin: auto;
     display: flex;
@@ -413,26 +429,31 @@ h2 {
 }
 
 .about-ul li {
-    background-color: ivory;
+    background-color: #1a345e;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 5px;
     font-size: 1.1em;
     list-style: none;
     margin: 10px auto;
+    border-radius: 35%/ 5%;
+
+}
+
+.about-li p {
+    padding: 20px;
 
 }
 
 #portfolio {
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
     padding: 0;
-    width: 100%;
-    height: auto;
-    background-color: ivory;
-    color: rgb(24, 27, 47);
+    /* background-color: #1a345e; */
+    color: ivory;
     border-radius: 5%;
 
 }
@@ -461,16 +482,29 @@ h2 {
     width: 100%;
     height: auto;
     margin: auto;
-    background-color: ivory;
-    color: rgb(24, 27, 47);
+    background-color: #1a345e;
+    color: ivory;
     font-size: 1.3em;
 }
 
-.about-header {
+.about-header1 {
     text-align: center;
     border-radius: 20%;
-    border-bottom: #849e70 solid 4px;
-    border-top: #849e70 solid 1px;
+    border-bottom: #498bf6 solid 4px;
+    border-top: #498bf6 solid 1px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.intro {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 3vw;
+    color: ivory;
 }
 
 
@@ -532,8 +566,10 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
+
 h1 {
     text-align: center;
+    color: ivory;
 }
 
 input[type="checkbox"] {
@@ -591,8 +627,8 @@ button:hover {
     padding: 20px;
     width: 80%;
     height: auto;
-    background-color: rgb(204, 218, 227);
-    color: rgb(24, 27, 47);
+    /* background-color: #213d69; */
+    color: ivory;
     margin: auto;
 }
 
@@ -603,22 +639,7 @@ button:hover {
 
 @media (min-width: 768px) {
 
-    .project {
 
-        margin-left: 2vw;
-        width: calc(50% - 2vw);
-        /* 2 columns */
-        margin: 1vw;
-
-
-    }
-
-    #portfolio {
-        display: flex;
-        flex-direction: row;
-        margin-top: 80px;
-        margin: auto;
-    }
 
     header {
         display: flex;
@@ -695,10 +716,7 @@ button:hover {
         margin-top: 80px;
     }
 
-    .project {
-        width: calc(33% - 2vw);
-        margin: 1vw;
-    }
+
 }
 
 #sketch {
@@ -711,12 +729,9 @@ button:hover {
     /* This centers our sketch vertically. */
     align-items: center;
 
-    /* order: 0; */
+
 }
 
-/* .cc {
-    /* order: 1000; */
-/* } */
 
 .sketch {
     margin-top: 100px;
@@ -734,7 +749,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ivory;
+    background-color: rgb(14, 27, 71);
     padding: 2px 0px;
 }
 
@@ -770,4 +785,32 @@ button:hover {
     background: white;
     color: black;
 
+}
+
+.gallery img {
+    width: 80%;
+    height: auto;
+    display: flex;
+    margin: 2px;
+    padding: 1vw;
+    margin: auto;
+    border-radius: 50%/50%;
+    overflow: hidden;
+    animation: rotate 100s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.gallery-container {
+    background: #011536;
+    margin-top: 20px;
 }
