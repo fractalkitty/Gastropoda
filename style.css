@@ -232,7 +232,7 @@ a {
 .project img:hover {
     transform: rotate(2deg);
 }
-}
+
 
 .project {
     width: 100%;
@@ -619,18 +619,6 @@ button:hover {
     background-color: #95a06a;
 }
 
-#portfolio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    padding: 20px;
-    width: 80%;
-    height: auto;
-    /* background-color: #213d69; */
-    color: ivory;
-    margin: auto;
-}
 
 .explore {
     font-size: 2em;
@@ -961,4 +949,72 @@ button:hover {
 
 .wool-img2:hover {
     transform: scale(1.2);
+}
+
+.cube-container {
+
+    perspective: 1200px;
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.photo-cube {
+    transition: transform 10s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    width: 220px;
+    height: 220px;
+    transform-style: preserve-3d;
+    animation: rotate3D 50s linear infinite;
+}
+
+@keyframes rotate3D {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+
+.front,
+.back,
+.left,
+.right,
+.top,
+.bottom {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    transform-style: inherit;
+    backface-visibility: hidden;
+}
+
+.front {
+    transform: translate3d(0, 0, 110px);
+}
+
+.back {
+    transform: translateZ(-110px) rotateY(270deg);
+    transform-origin: center left;
+}
+
+.left {
+    transform: rotateY(-270deg) translate3d(110px, 0, 0);
+    transform-origin: top right;
+}
+
+.right {
+    transform: translateZ(-110px) rotateY(180deg);
+}
+
+.top {
+    transform: rotateX(90deg) translate3d(0, 0px, 110px);
+
+}
+
+.bottom {
+    transform: rotateX(-90deg) translate3d(0, 0, 110px);
 }
