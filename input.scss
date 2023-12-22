@@ -1,3 +1,11 @@
+$color-1:#011536 ;
+$color-2: ivory;
+$color-3: #1a345e;
+$color-4: #27436f;
+$color-5: #498bf6;
+$color-6: #0e1d36;
+
+
 * {
     box-sizing: border-box;
 
@@ -8,7 +16,7 @@ body {
     font-family: 'slugglyregular', sans-serif;
     line-height: 1.5;
     color: lightyellow;
-    background-color: #011536;
+    background-color: $color-1;
     margin-top: 2vh;
     margin-bottom: 20px;
     font-size: 18px;
@@ -27,7 +35,7 @@ body {
     text-align: center;
     font-weight: normal;
     margin-bottom: 20px;
-    color: ivory;
+    color: $color-2;
     font-size: 3.5em;
     line-height: 1em;
     padding: 5px;
@@ -51,7 +59,7 @@ nav h1 {
 .head-container {
     background-color: #011e4f;
     padding-bottom: 20px;
-    color: ivory;
+    color: $color-2;
 }
 
 .project {
@@ -131,7 +139,7 @@ a {
     padding: 0;
     width: 100%;
     height: auto;
-    background-color: #1a345e;
+    background-color: $color-3;
 
     color: rgb(24, 27, 47);
 
@@ -155,7 +163,7 @@ a {
     padding: 0;
     width: 100%;
     height: auto;
-    background-color: #1a345e;
+    background-color: $color-3;
     color: rgb(24, 27, 47);
 
 }
@@ -190,7 +198,7 @@ a {
     margin-right: 10px;
     margin-left: 10px;
     list-style-type: none;
-    background-color: #1a345e;
+    background-color: $color-3;
     border-radius: 25% / 10%;
     font-family: 'Nunito Sans', sans-serif;
 
@@ -212,8 +220,8 @@ a {
     width: 90%;
     justify-content: center;
     text-align: center;
-    background-color: #1a345e;
-    color: ivory;
+    background-color: $color-3;
+    color: $color-2;
     border-radius: 5%;
     margin-bottom: 5px;
 }
@@ -286,9 +294,9 @@ footer nav {
 #header {
     padding: 20px;
     font-size: 50px;
-    background-color: #1a345e;
+    background-color: $color-3;
     border-bottom: solid black 2px;
-    color: ivory;
+    color: $color-2;
 }
 
 
@@ -308,7 +316,7 @@ div.huge {
     margin-bottom: 50px;
     margin-top: 10px;
     width: 80%;
-    background: #1a345e;
+    background: $color-3;
     border-radius: 10%/50%;
     text-align: center;
 }
@@ -320,7 +328,7 @@ div.huge {
     margin: auto;
     width: 80%;
     margin-bottom: 50px;
-    background: #1a345e;
+    background: $color-3;
     border-radius: 10%;
     text-align: center;
 }
@@ -331,7 +339,7 @@ div.huge {
     margin: auto;
     margin-bottom: 50px;
     width: 90%;
-    background: #1a345e;
+    background: $color-3;
     border-radius: 20%/5%;
     text-align: center;
     letter-spacing: 0.5em;
@@ -356,7 +364,7 @@ div.slug-2 {
     padding: 5px;
     line-height: 1em;
     font-weight: normal;
-    color: #27436f;
+    color: $color-4;
     margin: auto;
 }
 
@@ -364,7 +372,7 @@ div.slug-2 {
     margin: 0;
     padding: 0;
     font-size: 100%;
-    background: #0e1d36;
+    background: $color-6;
     width: 100%;
     box-sizing: border-box;
     text-align: center;
@@ -381,7 +389,7 @@ div.slug-2 {
     font-size: 40px;
     color: #202d43;
     text-decoration: none;
-    background-color: ivory;
+    background-color: $color-2;
     border-radius: 5px;
     transition: background-color 0.3s ease;
     border: none;
@@ -429,7 +437,7 @@ h2 {
 }
 
 .about-ul li {
-    background-color: #1a345e;
+    background-color: $color-3;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 5px;
     font-size: 1.1em;
@@ -452,8 +460,8 @@ h2 {
     align-items: center;
     margin: auto;
     padding: 0;
-    /* background-color: #1a345e; */
-    color: ivory;
+    /* background-color: $color-3; */
+    color: $color-2;
     border-radius: 5%;
 
 }
@@ -482,16 +490,16 @@ h2 {
     width: 100%;
     height: auto;
     margin: auto;
-    background-color: #1a345e;
-    color: ivory;
+    background-color: $color-3;
+    color: $color-2;
     font-size: 1.3em;
 }
 
 .about-header1 {
     text-align: center;
     border-radius: 20%;
-    border-bottom: #498bf6 solid 4px;
-    border-top: #498bf6 solid 1px;
+    border-bottom: $color-5 solid 4px;
+    border-top: $color-5 solid 1px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -504,7 +512,7 @@ h2 {
     text-align: center;
     font-size: 1.3em;
     margin: 3vw;
-    color: ivory;
+    color: $color-2;
 }
 
 
@@ -569,7 +577,7 @@ input[type="submit"]:hover {
 
 h1 {
     text-align: center;
-    color: ivory;
+    color: $color-2;
 }
 
 input[type="checkbox"] {
@@ -799,7 +807,7 @@ button:hover {
 
 
 .gallery-container {
-    background: #011536;
+    background: $color-1;
     margin-top: 20px;
 }
 
@@ -879,7 +887,7 @@ button:hover {
     font-weight: normal;
     margin: 0;
     padding: 0;
-    color: ivory;
+    color: $color-2;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -931,7 +939,7 @@ button:hover {
     font-weight: normal;
     margin: 0;
     padding: 2vw 20vw;
-    color: ivory;
+    color: $color-2;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -1017,4 +1025,11 @@ button:hover {
 
 .bottom {
     transform: rotateX(-90deg) translate3d(0, 0, 110px);
+}
+
+.log-iframe{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
 }

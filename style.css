@@ -20,7 +20,6 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-
 .title {
   text-align: center;
   font-weight: normal;
@@ -421,7 +420,7 @@ h2 {
   align-items: center;
   margin: auto;
   padding: 0;
-  /* background-color: #1a345e; */
+  /* background-color: $color-3; */
   color: ivory;
   border-radius: 5%;
 }
@@ -585,20 +584,17 @@ button:hover {
     margin-left: 2vw;
     margin-right: 2vw;
   }
-
   header h1 {
     margin: 0;
     width: 60%;
     font-size: 1em;
   }
-
   header img {
     width: 40%;
     height: 40%;
     order: 2;
     margin-right: 2vw;
   }
-
   footer {
     display: flex;
     width: 100vw;
@@ -606,24 +602,20 @@ button:hover {
     margin: 0;
     justify-content: space-between;
   }
-
   footer p {
     display: flex;
     width: 100%;
     font-size: 0.8em;
   }
-
   footer .back-to-top {
     display: none;
   }
-
   footer nav {
     display: flex;
     margin: 0;
     justify-content: flex-end;
     width: 40%;
   }
-
   footer ul {
     display: flex;
     margin-right: 0;
@@ -631,23 +623,19 @@ button:hover {
     width: 100%;
     justify-content: flex-end;
   }
-
   footer li {
     margin-right: 0;
     font-size: 0.8em;
   }
-
   #sluggly {
     margin-top: 50px;
   }
 }
-
 @media (min-width: 1024px) {
   #sluggly {
     margin-top: 80px;
   }
 }
-
 #sketch {
   margin: 0;
   display: flex;
@@ -726,12 +714,10 @@ button:hover {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
 }
-
 .gallery-container {
   background: #011536;
   margin-top: 20px;
@@ -902,12 +888,10 @@ button:hover {
   0% {
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
-
   100% {
     transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
   }
 }
-
 .front,
 .back,
 .left,
@@ -948,4 +932,11 @@ button:hover {
   transform: rotateX(-90deg) translate3d(0, 0, 110px);
 }
 
-/*# sourceMappingURL=output.css.map */
+.log-iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
